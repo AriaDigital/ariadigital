@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Fonts*/
+/* NOTE: h1, h2, and h3 are attached to Bourbon in Typekit */
+font-family: bourbon, serif;
+
+@font-face {
+    font-family: 'caroni';
+    src: url('caroni-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Global*/
+body{
+  font-family: caroni, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color:#66ffcc;
+}
+
+h3{
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 7em;
+  font-weight: normal;
+}
+
+p{
+  font-size: 2em;
+}
+
+
+/* Navigation */
+.nav{
+  position: fixed; /* TODO: change position mediaQ  */
+  top: 0px;
+  right: 3rem;
+  background-image: url(img/nav/navBanner.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 64px;
+  height: 250px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ad_logo{
+  width: auto;
+  height: 3.8rem;
+}
+
+#insta_logo{
+  width: auto;
+  height: 1.4rem;
+  margin: 3px;
+}
+
+#insta_logo:hover{
+  height: 1.7rem;
+}
+
+.nav_icon{
+  width: auto;
+  height: 1.5rem;
+  margin: 3px;
+}
+
+.nav_icon:hover{
+  height: 1.8rem;
+}
+
+
+/* Landing */ /* FIXME: make landing logo smaller @750 */
+.landing_container{
+  background-image: url(img/WC_Only_1.png);
+  background-repeat: no-repeat;
+  background-position: 10% 75%;
+  background-size: 125rem 70rem;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Full_Logo{
+  width: 45rem;
+}
+
+.tagline{
+  text-align: center;
+  color: #66ffcc;
+  font-size: 4.5em;
+  /*text-shadow: -2px 0 8px white, 0 2px 8px white, 2px 0 8px white, 0 -2px 8px white;*/
+  margin-bottom: 10px;
+}
+
+.landing_icons{
+  width: 16%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: .5rem;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#land_printIcon{
+  height: 5rem;
+}
+
+#land_webIcon{
+  height: 3.8rem;
+}
+
+#land_camIcon{
+  height: 3.2rem;
+}
+
+#work_button{
+  background-image: url(img/workButton_1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#work_button a{
+  color: white;
+  font-size: 3em;
+  padding-bottom: .2rem;
+}
+
+#work_button a:hover{
+  font-size: 3.5em;
+}
+
+
+/*Projects List*/
+.project_list_container{
+  padding: 2rem 0px 0px 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.project{
+  margin-bottom: 5rem;
+}
+
+.project_list_icons{
+  margin-top: .8rem;
+  display: flex;
+  align-items: center;
+}
+
+.project_list_icons img{
+  margin-right: .8rem;
+}
+
+.proj_penIcon{
+  height: 1.5rem;
+}
+
+.proj_printIcon{
+  height: 45px;
+}
+
+.proj_webIcon{
+  height: 32px;
+}
+
+.proj_camIcon{
+  height: 28px;
+}
+
+.project_thumb_container{
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.project_thumb{
+  margin-right: 1rem;
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  box-shadow: -3px 3px 4px 1px #66ffcc;
+}
+
+
+/*Project Detail Page*/
+.container{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 4rem;
+}
+
+#big_penIcon{
+  height: 3rem;
+  padding-right: 1rem;
+}
+
+.logo_grid{
+  display: grid;
+  margin-top: 2rem;
+  font-size: 1.8em;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-column-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.client_logo{
+  width: 30rem;
+}
+
+.client_blurb{
+  grid-column: 2/4;
+}
+
+.grid_container{ /* TODO: make responsive */
+  margin-top: 2rem;
+  font-size: 1.8em;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5rem;
+  grid-column-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.shirt_mockup p{
+  text-align: center;
+  font-size: .8em;
+  padding: .5em;
+}
+
+.print_mockup p{
+  text-align: center;
+  font-size: .8em;
+  padding: .5em;
+}
+
+.shirt_mockup img{
+  height: auto;
+  width: 16rem;
+  -webkit-filter: drop-shadow(-3px 3px 4px #66ffcc);
+  filter: drop-shadow(-3px 3px 4px #66ffcc);
+}
+
+.print_mockup img{
+  width: 30rem;
+  -webkit-filter: drop-shadow(-3px 3px 4px #66ffcc);
+  filter: drop-shadow(-3px 3px 4px #66ffcc);
+}
+
+/*About Page*/
+
+.about_container{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.about_photo{
+  width: 15%;
+  margin-bottom: 2rem;
+}
+
+.about_icons{
+  width: 16%;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: .5rem;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.about_icons img{
+  width: 3rem;
+}
+
+.about_icons img:hover{
+  width: 3.5rem;
+}
+
+.about_blurb{
+  width: 40%;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/*Footer*/
+
+footer{
+  font-size: .6em;
+  text-align: center;
+  color: grey;
+
+}
