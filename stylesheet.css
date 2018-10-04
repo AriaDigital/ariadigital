@@ -5,11 +5,11 @@
 
 /*Fonts*/
 /* NOTE: h1, h2, and h3 are attached to Bourbon in Typekit */
-font-family: bourbon, serif;
+/*font-family: bourbon, serif;*/
 
 @font-face {
-    font-family: 'caroni';
-    src: url('fonts/caroni-regular.woff') format('woff');
+    font-family: caroni;
+    src: url(fonts/caronireg.woff) format('woff'), url(fonts/caronireg.ttf) format('truetype'), url(fonts/caronireg.svg) format('svg');
     font-weight: normal;
     font-style: normal;
 }
